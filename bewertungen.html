@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bewertungen - HausproFix24</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #f4f4f4, #e0e0e0);
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #005599;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      background-color: #005599;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #003f73;
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bewertungen</h1>
+    <p>Teilen Sie Ihre Erfahrung mit HausproFix24</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Startseite</a>
+    <a href="ueber-uns.html">Über uns</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="preise.html">Preise</a>
+    <a href="bewertungen.html">Bewertungen</a>
+    <a href="index.html#kontakt">Kontakt</a>
+  </nav>
+
+  <section>
+    <h2>Ihre Meinung zählt!</h2>
+    <form action="https://formsubmit.co/joioan757@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Neue Bewertung von einem Kunden">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+
+      <label for="name">Name (optional)</label>
+      <input type="text" id="name" name="Name">
+
+      <label for="bewertung">Ihre Bewertung</label>
+      <textarea id="bewertung" name="Bewertung" rows="5" maxlength="500" placeholder="Was hat Ihnen gefallen? Würden Sie uns weiterempfehlen?" required></textarea>
+
+      <label for="sterne">Sternebewertung</label>
+      <select id="sterne" name="Sterne">
+        <option value="5 Sterne">★★★★★ - Sehr gut</option>
+        <option value="4 Sterne">★★★★☆ - Gut</option>
+        <option value="3 Sterne">★★★☆☆ - In Ordnung</option>
+        <option value="2 Sterne">★★☆☆☆ - Eher schlecht</option>
+        <option value="1 Stern">★☆☆☆☆ - Schlecht</option>
+      </select>
+
+      <button type="submit">Bewertung absenden</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 HausproFix24 – Alle Rechte vorbehalten
+  </footer>
+</body>
+</html>
