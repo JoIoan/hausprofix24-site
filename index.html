@@ -77,27 +77,36 @@
 
   <section id="buchung">
     <h2>Termin buchen</h2>
-    <form>
+    <form action="https://formsubmit.co/joioan757@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Neue Termin-Anfrage von HausproFix24">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+
       <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="Name" required>
 
       <label for="telefon">Telefon</label>
-      <input type="tel" id="telefon" name="telefon" placeholder="Telefonnummer" />
+      <input type="tel" id="telefon" name="Telefon" placeholder="Telefonnummer">
 
       <label for="datum">Datum</label>
-      <input type="date" id="datum" name="datum" required>
+      <input type="date" id="datum" name="Datum" required>
 
       <label for="zeit">Uhrzeit</label>
-      <input type="time" id="zeit" name="zeit" required>
+      <input type="time" id="zeit" name="Uhrzeit" required>
 
       <label for="service">Service</label>
-      <select id="service" name="service">
+      <select id="service" name="Service" onchange="toggleBeschreibung()">
         <option value="reinigung">Treppenhausreinigung</option>
         <option value="garten">Gartenpflege</option>
         <option value="reparatur">Kleinreparaturen</option>
         <option value="winter">Winterdienst</option>
         <option value="andere">Andere</option>
       </select>
+
+      <div id="beschreibungField" style="display: none;">
+        <label for="beschreibung">Beschreibung</label>
+        <textarea id="beschreibung" name="Beschreibung" rows="4" maxlength="500" placeholder="Beschreiben Sie den gewünschten Service..."></textarea>
+      </div>
 
       <button type="submit">Termin anfragen</button>
     </form>
@@ -112,6 +121,13 @@
   <footer>
     &copy; 2025 HAUSPROFIX24 - Alle Rechte vorbehalten
   </footer>
+
+  <script>
+    function toggleBeschreibung() {
+      const service = document.getElementById("service").value;
+      const beschreibungField = document.getElementById("beschreibungField");
+      beschreibungField.style.display = service === "andere" ? "block" : "none";
+    }
+  </script>
 </body>
 </html>
-
