@@ -5,14 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HausproFix24 - Hausmeisterservice</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #003366; color: white; padding: 20px; text-align: center; }
-    nav { background: #005599; text-align: center; padding: 10px; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
-    section { padding: 20px; }
-    footer { background: #003366; color: white; text-align: center; padding: 10px; margin-top: 20px; }
-    input, textarea, select, button { display: block; margin: 10px 0; width: 100%; padding: 8px; }
-    form { max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 5px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #e0e0e0, #f4f4f4);
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #005599;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    input, textarea, select, button {
+      display: block;
+      margin: 10px 0;
+      width: 100%;
+      padding: 8px;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
@@ -45,7 +82,7 @@
       <input type="text" id="name" name="name" required>
 
       <label for="telefon">Telefon</label>
-      <input type="tel" id="telefon" name="telefon" required>
+      <input type="tel" id="telefon" name="telefon" placeholder="Telefonnummer" />
 
       <label for="datum">Datum</label>
       <input type="date" id="datum" name="datum" required>
@@ -68,9 +105,8 @@
 
   <section id="kontakt">
     <h2>Kontakt</h2>
-    <p>Telefon: 0123 4567890</p>
     <p>E-Mail: info@hausprofix24.de</p>
-    <p>Region: [Deine Stadt]</p>
+    <p>Region: 45770 Marl und Umgebung</p>
   </section>
 
   <footer>
@@ -78,3 +114,4 @@
   </footer>
 </body>
 </html>
+
