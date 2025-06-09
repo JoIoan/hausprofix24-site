@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aktuelle Nachrichten aus Deutschland und der Welt">
+    <title>Nachrichten Deutschland</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Nachrichten Deutschland</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Politik</a></li>
+                <li><a href="#">Wirtschaft</a></li>
+                <li><a href="#">Kultur</a></li>
+                <li><a href="#">Sport</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <article>
+            <h2>Aktuelle Nachrichten</h2>
+            <p>Willkommen zu den neuesten Nachrichten aus Deutschland und der Welt. Heute haben wir interessante Berichte aus der Politik, Wirtschaft und Kultur.</p>
+        </article>
+
+        <!-- Advertisement Banner (Example) -->
+        <div class="advertisement">
+            <h3>Werbung</h3>
+            <!-- AdSense code can go here (example) -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXX"
+                 data-ad-slot="XXXXXX"
+                 data-ad-format="auto"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <article>
+            <h3>Politische Ereignisse in Deutschland</h3>
+            <p>Die politischen Entwicklungen in Deutschland sind immer spannend und wichtig für die Zukunft des Landes. In dieser Ausgabe gehen wir näher auf die neuesten Ereignisse ein.</p>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Nachrichten Deutschland | Alle Rechte vorbehalten</p>
+    </footer>
+</body>
+</html>
